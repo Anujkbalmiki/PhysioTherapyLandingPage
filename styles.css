@@ -1,0 +1,289 @@
+* {
+   scroll-behavior: smooth;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: 'Noto Sans', sans-serif;
+   line-height: 1.6;
+   color: #333;
+   background-color: #f4f4f4;
+}
+
+.container {
+   max-width: 1200px;
+   margin: 40px auto;
+   padding: 20px;
+}
+
+
+/* Hero Section */
+.hero {
+   position: relative; 
+   background-image: url('./Physio1.jpg'); 
+   background-size: cover; 
+   background-position: center; 
+   background-repeat: no-repeat; 
+   text-align: center; 
+   padding: 100px 20px; 
+   color: white; 
+}
+
+.hero .container {
+   position: relative; 
+   z-index: 1; 
+}
+
+.hero::before {
+   content: ''; 
+   position: absolute; 
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.5); 
+   z-index: 0; 
+}
+
+.hero h1{
+   font-size: 2vmax;
+   font-weight: 400;
+   position: relative; 
+   z-index: 2;    
+}
+
+.hero p, .hero .btn {
+   font-size: 1.2vmax;
+   position: relative; 
+   z-index: 2; 
+}
+
+.hero .btn {
+   background-color: #388e3c;
+   color: white;
+   padding: 15px 30px;
+   font-size: 1.2vmax;
+   border: none;
+   cursor: pointer;
+   border-radius: 5px;
+   margin: 1vmax;
+}
+
+.hero .btn:hover {
+   background-color: #2e7d32; 
+}
+
+/* ------------- */
+
+/*  Hero Section / Without Picture */
+/*
+.hero {
+   background-image: linear-gradient(to bottom, #ffffff, #e0f7e8);
+   text-align: center;
+   padding: 100px 20px;
+}
+
+.hero h1 {
+   font-size: 2.5vmax;
+   color: #2e7d32;
+}
+
+.hero p {
+   font-size: 1.2vmax;
+   margin: 20px 0;
+   color: #388e3c;
+}
+
+.hero .btn {
+   background-color: #388e3c;
+   color: white;
+   padding: 15px 30px;
+   font-size: 1.2vmax;
+   border: none;
+   cursor: pointer;
+   border-radius: 5px;
+}
+
+.hero .btn:hover {
+   background-color: #2e7d32;
+}
+*/
+
+/* Navigation Menu */
+nav {
+   background-color: #2e7d32;
+   color: white;
+   padding: 15px 0;
+   text-align: center;
+}
+
+nav ul {
+   list-style: none;
+}
+
+nav ul li {
+   display: inline;
+   margin: 0 15px;
+}
+
+nav ul li a {
+   font-size: 1.2vmax;
+   color: white;
+   text-decoration: none;
+   font-weight: 400;
+}
+
+nav ul li a:hover {
+   text-decoration: underline;
+}
+
+/* Home Section */
+#home {
+   background-color: #ffffff;
+   padding: 50px 20px;
+   text-align: center;
+}
+
+#home h2 {
+   color: #2e7d32;
+   font-size: 2.1vmax;
+   margin-bottom: 20px;
+}
+
+#home p {
+   color: #555;
+   font-size: 1.3vmax;
+}
+
+/* About Us Section */
+#about {
+   background-color: #e0f7e8;
+   padding: 50px 20px;
+   text-align: center;
+}
+
+#about h2 {
+   color: #2e7d32;
+   font-size: 2.1vmax;
+   margin-bottom: 20px;
+}
+
+#about p {
+   color: #555;
+   font-size: 1.3vmax;
+}
+
+/* Services Section */
+#services {
+   background-color: #ffffff;
+   padding: 50px 20px;
+   text-align: center;
+}
+
+#services h2 {
+   color: #2e7d32;
+   font-size: 2.1vmax;
+   margin-bottom: 15px;
+}
+
+#services .service {
+   margin: 20px 0;
+}
+
+#services .service h3 {
+   color: #388e3c;
+   font-size: 1.5vmax;
+   margin-bottom: 10px;
+}
+
+#services .service p {
+   color: #555;
+   font-size: 1.3vmax;
+   width: fit-content;
+}
+
+/* Contact Us Section */
+#contact {
+   background-color: #e0f7e8;
+   padding: 50px 20px;
+   text-align: center;
+}
+
+#contact h2 {
+   color: #2e7d32;
+   font-size: 2vmax;
+   margin-bottom: 20px;
+}
+
+#contact p {
+   color: #555;
+   font-size: 1.2vmax;
+   margin: 10px 0;
+}
+
+#contact form {
+   max-width: 600px;
+   margin: 20px auto;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="phone"],
+#contact textarea {
+   width: 100%;
+   padding: 15px;
+   margin: 8px 0;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+#contact button.btn {
+   background-color: #2f8c34;
+   color: white;
+   padding: 15px 30px;
+   font-size: 1vmax;
+   border: none;
+   cursor: pointer;
+   border-radius: 5px;
+}
+
+#contact button.btn:hover {
+   background-color: #2e7d32;
+}
+
+/* Footer */
+footer {
+   background-color: #2e7d32;
+   color: white;
+   text-align: center;
+   padding: 20px 0;
+   margin-top: 30px;
+}
+
+footer p {
+   margin: 0;
+   font-size: 1vmax;
+}
+
+/* Back to Top Button */
+.back-to-top {
+   display: none;
+   position: fixed;
+   bottom: 40px;
+   right: 40px;
+   background-color: #388e3c;
+   color: white;
+   border: none;
+   border-radius: 50%;
+   padding: 15px 20px;
+   font-size: 1rem;
+   cursor: pointer;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+   z-index: 1000;
+}
+
+.back-to-top:hover {
+   background-color: #2e7d32; 
+}
